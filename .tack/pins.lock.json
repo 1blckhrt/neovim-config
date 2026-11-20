@@ -1,0 +1,32 @@
+{
+  "$declared": {
+    "mnw": "github:Gerg-L/mnw",
+    "nixpkgs": "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.zst",
+    "treefmt-nix": "github:numtide/treefmt-nix"
+  },
+  "mnw": {
+    "type": "github",
+    "owner": "Gerg-L",
+    "repo": "mnw",
+    "rev": "a582dbedf7c8ec7effa6939ac5bdd23b27267d1b",
+    "narHash": "sha256-6IWPAMEotKY/nQvs1kU6qwMwCXTeW5HlOhw2RwFHFdI=",
+    "lastModified": 1790357809,
+    "public": true
+  },
+  "nixpkgs": {
+    "type": "tarball",
+    "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1124565.19cfded70b91/nixexprs.tar.zst?lastModified=1795095985&rev=19cfded70b91ca0981373973c5b1efffdd4d6647",
+    "rev": "19cfded70b91ca0981373973c5b1efffdd4d6647",
+    "narHash": "sha256-iE8oRwNZcE7Mcupd5cNTCWMi4e07CoQIRYUmw5tf+9w=",
+    "lastModified": 1795095985
+  },
+  "treefmt-nix": {
+    "type": "github",
+    "owner": "numtide",
+    "repo": "treefmt-nix",
+    "rev": "a0a97e31a897a3537eea5c49df4f8adaa83b3b37",
+    "narHash": "sha256-J8IYl3oEdctyvBgWr+/L01MY5Xm0TU4WXwZDccN5jjk=",
+    "lastModified": 1795173499,
+    "public": true
+  }
+}

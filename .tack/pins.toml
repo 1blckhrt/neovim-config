@@ -1,0 +1,15 @@
+# tack pins
+# edit by hand or with tack add / rm / alias
+# nix reads pins.lock.json
+# this file drives tack update
+
+[tack]
+recomposable = true
+
+[inputs]
+nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.zst"
+mnw.url = "github:Gerg-L/mnw"
+
+[inputs.treefmt-nix]
+url = "github:numtide/treefmt-nix"
+follows = { nixpkgs = "nixpkgs" }
