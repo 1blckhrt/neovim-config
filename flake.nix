@@ -40,7 +40,7 @@
         in
         {
           default = self.packages.${system}.neovim;
-          dev = self.packages.${system}.default.devMode;
+          dev = self.packages.${system}.default.devMode; # nix shell .#neovim.devMode
           neovim = inputs.mnw.lib.wrap { inherit pkgs inputs; } ./config.nix;
         }
       );
