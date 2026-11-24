@@ -24,4 +24,20 @@
       impure = "~/nvim-config";
     };
   };
+  extraBinPath = builtins.attrValues {
+    inherit (pkgs)
+      # Python related tooling handled by venv
+      wl-clipboard
+      xclip
+      nil
+      nixfmt
+      lua-language-server
+      stylua
+      vscode-langservers-extracted
+      rumdl
+      prettierd
+      fd
+      ripgrep
+      ;
+  };
 }
