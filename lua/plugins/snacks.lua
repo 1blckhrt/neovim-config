@@ -70,6 +70,7 @@ return {
 		},
 	},
 	opts = {
+		indent = { enabled = true },
 		terminal = {
 			enabled = true,
 			win = {
