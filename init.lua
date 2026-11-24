@@ -70,10 +70,9 @@ map({ "n", "i", "v" }, "<up>", '<cmd>echo "Use k to move!"<CR>')
 map({ "n", "i", "v" }, "<down>", '<cmd>echo "Use j to move!"<CR>')
 
 -- System clipboard
-map({ "n", "v" }, "<leader>y", '"+y')
-map("n", "<leader>Y", '"+Y')
-map({ "n", "v" }, "<leader>p", '"+p')
-map({ "n", "v" }, "<leader>P", '"+P')
+map({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank" })
+map("n", "<leader>Y", '"+Y', { desc = "Yank line" })
+map({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
 
 -- Plugins
 if mnw ~= nil then
