@@ -9,7 +9,3 @@ recomposable = true
 [inputs]
 nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.zst"
 mnw.url = "github:Gerg-L/mnw"
-
-[inputs.treefmt-nix]
-url = "github:numtide/treefmt-nix"
-follows = { nixpkgs = "nixpkgs" }
