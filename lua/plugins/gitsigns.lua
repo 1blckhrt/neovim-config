@@ -1,4 +1,4 @@
 return {
-	"lewis6991/gitsigns.nvim",
-	lazy = false,
+  "lewis6991/gitsigns.nvim",
+  lazy = false,
 }

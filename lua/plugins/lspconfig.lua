@@ -1,22 +1,22 @@
 return {
-	"neovim/nvim-lspconfig",
-	lazy = false,
-	config = function()
-        local servers = {
-            lua_ls = {},
-			nil_ls = {},
-			ruff = {},
-			ty = {},
-			pyrefly = {},
-			sqruff = {},
-			cssls = {},
-			jsonls = {},
-			rumdl = {},
-		}
+  "neovim/nvim-lspconfig",
+  lazy = false,
+  config = function()
+    local servers = {
+      lua_ls = {},
+      nil_ls = {},
+      ruff = {},
+      ty = {},
+      pyrefly = {},
+      sqruff = {},
+      cssls = {},
+      jsonls = {},
+      rumdl = {},
+    }
 
-		for server_name, cfg in pairs(servers) do
-			vim.lsp.config(server_name, cfg)
-			vim.lsp.enable(server_name)
-		end
-	end,
+    for server_name, cfg in pairs(servers) do
+      vim.lsp.config(server_name, cfg)
+      vim.lsp.enable(server_name)
+    end
+  end,
 }
