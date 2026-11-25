@@ -6,9 +6,14 @@ return {
       lua = { "stylua" },
       python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
       nix = { "nixfmt" },
-      markdown = { "rumdl" },
-      json = { "prettierd", stop_after_first = true },
+      markdown = { "prettierd-markdown" },
       sql = { "sqruff" },
+    },
+    formatters = {
+      prettierd_markdown = {
+        inherit = "prettierd",
+        prepend_args = { "--prose-wrap", "always" },
+      },
     },
     format_on_save = {
       timeout_ms = 500,

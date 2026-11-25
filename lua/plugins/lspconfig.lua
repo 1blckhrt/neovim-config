@@ -11,7 +11,16 @@ return {
       sqruff = {},
       cssls = {},
       jsonls = {},
-      rumdl = {},
+      rumdl = {
+        cmd = { "rumdl", "server" },
+        filetypes = { "markdown" },
+        root_markers = { ".rumdl.toml", "rumdl.toml", ".git" },
+        on_attach = function(client, bufnr)
+          -- Prevent rumdl LSP from formatting; let conform + prettierd handle it
+          client.server_capabilities.documentFormattingProvider = false
+          client.server_capabilities.documentRangeFormattingProvider = false
+        end,
+      },
     }
 
     for server_name, cfg in pairs(servers) do
